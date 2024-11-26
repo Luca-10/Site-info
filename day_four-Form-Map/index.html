@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <link rel="stylesheet" href="css/style.css">
+    <title>Travel Info</title>
+</head>
+<body>
+    <h1>Explore fruits and food</h1>
+    
+    <!-- Image Map -->
+    <h2>Food</h2>
+    <img class="center" src="img/fructe.jpg" alt=Fructe" usemap="#fruits">
+    <map name="fruits">
+        <area shape="rect" coords="175,171,300,262" href="https://en.wikipedia.org/wiki/Strawberry" target="_blank" alt="Strawberry">
+        <area shape="circle" coords="386,217,85" href="https://en.wikipedia.org/wiki/Peach" target="_blank" alt="Peach">
+        <area shape="poly" coords="363,113,335,153,298,164,269,127,333,75" href="https://en.wikipedia.org/wiki/Pear" target="_blank" alt="Pear">
+    </map>
+    <!--pun optiune de click pentru anumite tari cu link pt. wikipedia description-->
+
+    
+    <div class="form-container">
+        <h2> Order: </h2>
+        <form action="/submit" method="post">
+            <div class="form-group">
+                <label for="name">Full Name:*</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="email">Email:*</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            
+            <div class="form-group">
+                <label for="date">Birth date:</label>
+                <input type="date" id="date" name="date">
+            </div>
+
+            <div class="form-group">
+                <label for="food">Favourite Food Type:</label>
+                <select id="food" name="food">
+                    <option value="sarmale">Sarmale</option>
+                    <option value="Mici">Mici</option>
+                    <option value="Papanasi">Papanasi</option>
+                    <option value="Carnat">Carnat</option>
+                    <option value="Mamaliga">Mamaliga</option>
+                </select>
+            </div>
+    
+            <hr>
+            <h1> Order details:</h1>
+            <hr>
+
+            <div class="form-group">
+                <label>Drinks Preferences:</label>
+                <table>
+                    <tr>
+                        <td><label for="Palinca">Palinca</label></td>
+                        <td><input type="checkbox" id="Palinca" name="Palinca" value="Palinca"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Vin">Vin</label></td>
+                        <td><input type="checkbox" id="Vin" name="Vin" value="Vin"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Zarea">Zarea</label></td>
+                        <td><input type="checkbox" id="Zarea" name="Zarea" value="Zarea"></td>
+                    </tr>
+                </table>
+            </div>
+    
+            <div class="form-group">
+                <label>Quantity:</label>
+                <table>
+                    <tr>
+                        <td><label for="one">One bottle</label></td>
+                        <td><input type="radio" id="One" name="Quantity1" value="One"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="two">Two bottles</label></td>
+                        <td><input type="radio" id="Two" name="Quantity2" value="Two"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="More">More</label></td>
+                        <td><input type="radio" id="More" name="Quantity3" value="More"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="form-group">
+                <label for="more_quantity">Quantity(only for more bottles*):</label>
+                <input type="tel" id="more_quantity" name="Quantity ">
+            </div>
+
+            <hr>
+
+            <div class="form-group">
+                <label>Food Preferences:</label>
+                <table>
+                    <tr>
+                        <td><label for="Sarmale">Sarmale</label></td>
+                        <td><input type="checkbox" id="Sarmale" name="Sarmale" value="Sarmale"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Mici">Mici</label></td>
+                        <td><input type="checkbox" id="Mici" name="Mici" value="Mici"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Papanasi">Papanasi</label></td>
+                        <td><input type="checkbox" id="Papanasi" name="Papanasi" value="Papanasi"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="form-group">
+                <label>Quantity:</label>
+                <table>
+                    <tr>
+                        <td><label for="one">One plate</label></td>
+                        <td><input type="radio" id="One" name="Quantity1" value="One"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="two">Two plates</label></td>
+                        <td><input type="radio" id="Two" name="Quantity2" value="Two"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="More">More plates</label></td>
+                        <td><input type="radio" id="More" name="Quantity3" value="More"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="form-group">
+                <label for="more_quantity">Quantity(only for more plates*):</label>
+                <input type="tel" id="more_quantity" name="Quantity ">
+            </div>
+
+            <hr>
+
+            <div class="form-group">
+                <label>Add fruits:</label>
+                <table>
+                    <tr>
+                        <td><label for="Peach">Peach   0.70 euro/kg</label></td>
+                        <td><input type="radio" id="Peach" name="Type1" value="Peach"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Banana">Banana  0.56 euro/kg</label></td>
+                        <td><input type="radio" id="Banana" name="Type2" value="Banana"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Strawberry">Strawberry   0.46 euro/kg</label></td>
+                        <td><input type="radio" id="Strawberry" name="Type3" value="Strawberry"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="form-group">
+                <label>Quantity:</label>
+                <table>
+                    <tr>
+                        <td><label for="one">One kg</label></td>
+                        <td><input type="radio" id="One" name="Quantity1" value="One"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="two">Two kg</label></td>
+                        <td><input type="radio" id="Two" name="Quantity2" value="Two"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="More">More kg</label></td>
+                        <td><input type="radio" id="More" name="Quantity3" value="More"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="form-group">
+                <label for="more_quantity">Quantity(only for more kg*):</label>
+                <input type="tel" id="more_quantity" name="Quantity ">
+            </div>
+
+            <hr>
+
+            <div class="form-group">
+                <label for="comments">Personal Preferences:</label>
+                <textarea id="comments" name="comments" rows="10" placeholder="Any other preferences or comments..."></textarea>
+            </div>
+    
+            <button type="submit" class="submit-btn" onclick="window.location.href='thankspage.html'">Submit Order</button>
+        </form>
+    </div>
+    
+    </body>
+    </html>
+    
